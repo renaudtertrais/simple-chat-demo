@@ -1,6 +1,8 @@
-# Simple chat demo"
+# Simple chat demo
 
-A simple React and Redux chat client demo
+A simple React and Redux chat client demo. 
+
+[See the demo](https://renaudtertrais.github.io/simple-chat-demo/)
 
 ## Getting started
 
