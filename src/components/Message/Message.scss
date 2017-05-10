@@ -1,0 +1,23 @@
+@import '../../style/inc';
+
+.Message {
+  background-color: white;
+  max-width: 75%;
+  padding: 5px;
+  border: 1px solid $color__grey;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+.Message__header {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.Message__footer {
+  text-align: right;
+  margin-top: 5px;
+  font-size: .6rem;
+  color: $color__grey;
+  text-transform: uppercase;
+}

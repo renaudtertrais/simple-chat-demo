@@ -1,0 +1,15 @@
+$color__primary: #3498DB;
+$color__primary--light: lighten($color__primary, 10%);
+$color__primary--dark: #2980B9;
+$color__grey: #ADB3B7;
+$color__grey--light: #ECF0F1;
+$color__grey--dark: #34495E;
+
+%reset-button {
+  background: none;
+  border: 0;
+  font-family: inherit;
+  font-size: inherit;
+  padding: 0;
+  outline: 0;
+}

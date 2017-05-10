@@ -1,0 +1,15 @@
+@import '~mdi/css/materialdesignicons.min.css';
+@import './inc';
+@import './markdown';
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Helvetica Neue", helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: $color__grey--dark;
+}

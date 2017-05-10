@@ -1,0 +1,232 @@
+@import '../../style/inc';
+
+.Client {
+  border: 1px solid $color__grey;
+  border-radius: 10px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.Client__header {
+  padding: 10px;
+  border-bottom: 1px solid $color__grey;
+  display: flex;
+  align-items: center;
+}
+
+.Client__current-user-name,
+.Client__user-count {
+  color: white;
+  display: inline;
+  padding: .05rem .5rem;
+  font-size: .9rem;
+  border-radius: .6rem;
+}
+
+.Client__user-count {
+  background-color: $color__primary;
+  margin-right: 10px;
+}
+
+.Client__header-users {
+  flex: 1;
+}
+
+.Client__messages {
+  flex: 1;
+  background-color: $color__grey--light;
+  padding: 0 10px;
+  overflow: auto;
+}
+
+.Client__message-notification {
+  text-align: center;
+  font-size: .8rem;
+  color: $color__grey;
+  line-height: 2;
+}
+
+.Client__message {
+  display: flex;
+  position: relative;
+}
+
+.Client__message--current-user {
+  justify-content: flex-end;
+
+  .Client__message-coma {
+    left: initial;
+    right: 5px;
+  }
+}
+
+.Client__message-coma {
+  position: absolute;
+  margin-top: -1px;
+  top: 100%;
+  left: 5px;
+}
+
+.Client__message-coma-path {
+  fill: white;
+  stroke: $color__grey;
+}
+
+.Client__footer {
+  position: relative;
+  padding: 10px;
+  border-top: 1px solid $color__grey;
+  overflow: hidden;
+}
+
+.Client__message-input-container {
+  display: flex;
+  align-items: center;
+  border: 1px solid $color__grey;
+  background-color: $color__grey--light;
+  border-radius: 10px;
+}
+
+.Client__message-input {
+  flex: 1;
+  resize: none;
+  background: transparent;
+  border: 0;
+  font: inherit;
+  padding: 5px 8px;
+  outline: none;
+  height: 80px;
+  color: $color__grey--dark;
+}
+
+.Client__buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Client__send-button {
+  @extend %reset-button;
+
+  margin: 0 10px;
+  width: 26px;
+  line-height: 26px;
+  text-align: center;
+  font-size: 1rem;
+  background-color: $color__primary;
+  color: white;
+  border-radius: 13px;
+  transition: all .2s;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $color__primary--light;
+    color: white;
+  }
+
+  &:active {
+    background-color: $color__primary--dark;
+    color: white;
+  }
+}
+
+.Client__emoji-button {
+  margin: 0 10px;
+  margin-top: 5px;
+  font-size: 1.6rem;
+}
+
+.Client__emoji-button,
+.Client__emoji-close,
+.Client__logout {
+  @extend %reset-button;
+
+  transition: all .2s;
+  cursor: pointer;
+  color: $color__grey;
+
+  &:hover {
+    color: $color__grey--dark;
+  }
+
+  &:active {
+    color: $color__grey--dark;
+  }
+}
+
+.Client__emoji-close {
+  font-size: 1.2rem;
+}
+
+.Client__footer-panel {
+  position: absolute;
+  top: 100%;
+  height: 100%;
+  width: 100%;
+  transition: all .3s;
+  background-color: white;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.Client__footer-panel--is-open {
+  top: 0;
+}
+
+.Client__footer-panel-header {
+  background-color: $color__grey--light;
+  border-bottom: 1px solid $color__grey;
+  padding: 5px;
+  display: flex;
+}
+
+.Client__emoji-search {
+  flex: 1;
+  outline: none;
+  border-radius: 10px;
+  color: $color__grey--dark;
+  font: inherit;
+  font-size: .7rem;
+  border: 1px solid $color__grey;
+  padding: 0 5px;
+}
+
+.Client__emoji-close {
+  margin-left: 5px;
+}
+
+.Client__emoji-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin: 5px;
+  margin-right: 0;
+  overflow: auto;
+  flex: 1;
+}
+
+.Client__emoji-item {
+  @extend %reset-button;
+
+  width: 20px;
+  height: 20px;
+  display: flex;
+  margin-bottom: 5px;
+  margin-left: 5px;
+  cursor: pointer;
+  transition: all .1s;
+
+  &:hover {
+    transform: scale(2);
+    position: relative;
+    z-index: 100;
+  }
+}
+
+.Client__emoji-item-symbol {
+  margin: auto;
+  font-size: .9rem;
+}

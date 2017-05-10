@@ -1,0 +1,36 @@
+@import '../../style/inc';
+
+.App__clients {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.App__client,
+.App__add-client {
+  width: 300px;
+  height: 500px;
+  margin: 20px;
+}
+
+.App__add-client {
+  @extend %reset-button;
+
+  background-color: $color__grey--light;
+  border: 1px solid $color__grey;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 50px;
+  color: $color__grey;
+  transition: all .2s;
+
+  &:hover {
+    border-color: $color__grey--dark;
+    color: $color__grey--dark;
+  }
+
+  &:active {
+    border-color: $color__grey--dark;
+    background-color: $color__grey--dark;
+    color: white;
+  }
+}
