@@ -14,7 +14,7 @@ A simple React and Redux chat client demo.
 
 This project uses npm scripts:
 
-- `test`: launch the test (`jest`) (no test written yet)
+- `test`: launch the test (`jest`)
 - `lint`: lint the `js`, `jsx`, `css` and `scss`
 - `build`: launch the build (`webpack`)
 - `deploy`: deploy the build folder on remote/gh-pages
@@ -35,9 +35,10 @@ This project uses npm scripts:
 
 ## To improve
 
-- [ ] Write tests
+- [ ] Complete tests (especially form components)
 - [ ] Split components (especially `Client.jsx`)
-- [ ] Add am "unread messages" notification if user scroll up
+- [ ] Extract functions in libs from containers that could be tested separately
+- [ ] Add an "unread messages" notification if user scroll up
 - [ ] Use a node server to allow real chat on different windows
 - [ ] Save history in database
 - [ ] Be a11y complient
@@ -53,8 +54,8 @@ This project uses:
 - [Redux](http://redux.js.org/)
 - [Scss](http://sass-lang.com/)
 - [Postcss](http://postcss.org/) ([autoprefixer](https://github.com/postcss/autoprefixer))
-- [Jest](https://facebook.github.io/jest/) (no test written yet)
-- [Enzyme](http://airbnb.io/enzyme/) (no test written yet)
+- [Jest](https://facebook.github.io/jest/)
+- [Enzyme](http://airbnb.io/enzyme/)
 - [Eslint](http://eslint.org/) ([airbnb](https://www.npmjs.com/package/eslint-config-airbnb))
 - [Stylelint](https://stylelint.io/)
 - [Travis CI](https://travis-ci.org/)
@@ -63,4 +64,4 @@ This project uses:
 
 ## Licence
 
-MIT © 2016-present Renaud Tertrais
+MIT © 2017-present Renaud Tertrais
